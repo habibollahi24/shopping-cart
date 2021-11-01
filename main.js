@@ -212,4 +212,3 @@ document.querySelector("#cart-btn").addEventListener("click", () => {
 document.querySelector(".modal__close-btn").addEventListener("click", () => {
   cartBody.style.display = "none";
 });
-clear
