@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+شnuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+  
+    <div class="back-drap"></div>
+    <nav class="bg-nav-bar">
+      <div class="container">
+        <div class="nav-items">
+          <div>
+            <i class="fas fa-bars"></i>
+          </div>
+          <div>
+            <p>Shopping Cart</p>
+          </div>
+          <div id="cart-btn" class="cart">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <span class="counter-product">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- product -->
+    <div class="container">
+      <p class="product-title">Our Products</p>
+      <section class="products"></section>
+    </div>
+    <!-- modal -->
+    <section class="modal">
+      <span class="modal__close-btn">X</span>
+      <h3 class="modal-header">Your Cart</h3>
+      <div class="products-cart"></div>
+      <section class="footer-modal">
+        <p class="total-price"></p>
+        <button id="clear-cart" class="modal-clear-btn">clear cart</button>
+        <button id="confirm-cart" class="modal-confirm-btn">confirm</button>
+      </section>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./products.js"></script>
+  </body>
+</html>
